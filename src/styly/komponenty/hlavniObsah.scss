@@ -2,4 +2,7 @@
 	padding: $mezera-od-okraju;
 	max-width: 1000px;
 	margin: 0 auto;
+	@media (min-width: 900px) {
+		grid-area: 1 / 2 / -1 / -1;	
+	}
 }

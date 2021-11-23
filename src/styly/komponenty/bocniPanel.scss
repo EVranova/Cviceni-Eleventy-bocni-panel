@@ -2,8 +2,22 @@
 	background-color: #ffffff;
 	width: 250px;
 	padding: $mezera-od-okraju;
+	position: fixed;
+	transform: translateX(-100%);
+	@media (min-width:900px) {
+		position: static;
+		transform: inherit;
+		grid-area: 1 / 1 / -1 / 2;	
+	}
+	&__zaviratko {
+		@media (min-width: 900px) {
+			display: none;
+		}
+	}
 
 	input:checked ~ & {
 		// Sem doplň styly pro vysunutý panel
+		transform: none;
+		transition: transform 0.3s;
 	}
 }

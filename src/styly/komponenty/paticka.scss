@@ -1,4 +1,7 @@
 .paticka {
 	text-align: center;
 	padding: $mezera-od-okraju;
+	@media (min-width: 900px) {
+		grid-area: 5 / 2 / -1 / -1;
+	}
 }
